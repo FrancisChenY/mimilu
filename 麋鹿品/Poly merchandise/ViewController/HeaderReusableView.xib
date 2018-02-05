@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="47"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Compass_category.png" translatesAutoresizingMaskIntoConstraints="NO" id="2p2-Td-KzO">
+                    <rect key="frame" x="8" y="10" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="0UA-hE-ZYd"/>
+                        <constraint firstAttribute="width" constant="20" id="HgV-O7-TC9"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="分类" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xd2-Qy-Rwe">
+                    <rect key="frame" x="33" y="11" width="30" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="2p2-Td-KzO" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="10" id="4Yi-Il-t1e"/>
+                <constraint firstItem="2p2-Td-KzO" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="8" id="Lie-zh-ea7"/>
+                <constraint firstItem="xd2-Qy-Rwe" firstAttribute="centerY" secondItem="2p2-Td-KzO" secondAttribute="centerY" id="XFS-nO-TrE"/>
+                <constraint firstItem="xd2-Qy-Rwe" firstAttribute="leading" secondItem="2p2-Td-KzO" secondAttribute="trailing" constant="5" id="sSE-3x-gGA"/>
+            </constraints>
+            <point key="canvasLocation" x="410" y="420.5"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="Compass_category.png" width="32" height="32"/>
+    </resources>
+</document>

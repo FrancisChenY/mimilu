@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="142" id="KGk-i7-Jjw" customClass="HotCell">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="142"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="322" height="141"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y1s-Zw-6yP">
+                        <rect key="frame" x="192" y="10" width="120" height="121"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="0u8-qi-i7n"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4X-bf-DJd">
+                        <rect key="frame" x="10" y="10" width="172" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MOY-h2-nWd">
+                        <rect key="frame" x="77" y="41" width="38" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jIX-RP-yRU">
+                        <rect key="frame" x="47" y="40" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="EVD-Sm-34Q"/>
+                            <constraint firstAttribute="width" constant="20" id="dOn-Yp-2bT"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cs-Nx-TrC">
+                        <rect key="frame" x="78" y="69" width="36" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass_eye.png" translatesAutoresizingMaskIntoConstraints="NO" id="eAh-yR-Swl">
+                        <rect key="frame" x="48" y="68" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="vQn-53-GDe"/>
+                            <constraint firstAttribute="width" constant="20" id="w1c-Hj-0zZ"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jIX-RP-yRU" firstAttribute="centerY" secondItem="MOY-h2-nWd" secondAttribute="centerY" id="29F-eC-IDh"/>
+                    <constraint firstItem="y1s-Zw-6yP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="2qJ-YA-xcQ"/>
+                    <constraint firstItem="eAh-yR-Swl" firstAttribute="centerY" secondItem="2cs-Nx-TrC" secondAttribute="centerY" id="33b-JU-VwF"/>
+                    <constraint firstItem="MOY-h2-nWd" firstAttribute="centerX" secondItem="y4X-bf-DJd" secondAttribute="centerX" id="RPf-3Z-cEV"/>
+                    <constraint firstAttribute="bottom" secondItem="y1s-Zw-6yP" secondAttribute="bottom" constant="10" id="U2z-dP-Md8"/>
+                    <constraint firstItem="MOY-h2-nWd" firstAttribute="top" secondItem="y4X-bf-DJd" secondAttribute="bottom" constant="10" id="VDm-7M-X2l"/>
+                    <constraint firstItem="2cs-Nx-TrC" firstAttribute="leading" secondItem="eAh-yR-Swl" secondAttribute="trailing" constant="10" id="WeV-Uh-xhP"/>
+                    <constraint firstAttribute="trailing" secondItem="y1s-Zw-6yP" secondAttribute="trailing" constant="10" id="dRp-MK-lIk"/>
+                    <constraint firstItem="y4X-bf-DJd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="gpG-S1-4Va"/>
+                    <constraint firstItem="y4X-bf-DJd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="hHM-w7-Zhi"/>
+                    <constraint firstItem="y1s-Zw-6yP" firstAttribute="leading" secondItem="y4X-bf-DJd" secondAttribute="trailing" constant="10" id="o4e-kU-M8j"/>
+                    <constraint firstItem="MOY-h2-nWd" firstAttribute="leading" secondItem="jIX-RP-yRU" secondAttribute="trailing" constant="10" id="ppp-dv-Bm7"/>
+                    <constraint firstItem="2cs-Nx-TrC" firstAttribute="top" secondItem="MOY-h2-nWd" secondAttribute="bottom" constant="10" id="sGf-nQ-3Ye"/>
+                    <constraint firstItem="2cs-Nx-TrC" firstAttribute="centerX" secondItem="MOY-h2-nWd" secondAttribute="centerX" id="we4-5T-fDL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatar" destination="jIX-RP-yRU" id="mX2-ME-NdO"/>
+                <outlet property="icon" destination="y1s-Zw-6yP" id="nbN-Ea-QKm"/>
+                <outlet property="nicknameLabel" destination="MOY-h2-nWd" id="u5J-EL-IWy"/>
+                <outlet property="titleLabel" destination="y4X-bf-DJd" id="AAT-GX-8Zi"/>
+                <outlet property="viewLabel" destination="2cs-Nx-TrC" id="yp3-nd-K5z"/>
+            </connections>
+            <point key="canvasLocation" x="368" y="438"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="compass_eye.png" width="32" height="32"/>
+    </resources>
+</document>
